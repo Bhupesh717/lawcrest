@@ -39,24 +39,19 @@ export function TestimonialSlider({
 
         {/* Quote text */}
         <blockquote className="font-serif text-xl sm:text-2xl md:text-3xl text-[#F5F1E8] font-light leading-relaxed italic mb-8">
-          "{current.content}"
+          "{current.quote}"
         </blockquote>
 
         {/* Client Author Info & Navigation Controls */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-6 border-t border-[#262018]">
           <div>
             <h4 className="font-serif text-lg font-bold text-[#F5F1E8]">
-              {current.authorName || current.name}
+              {current.clientName}
             </h4>
             <p className="text-xs text-[#8F897F] mt-0.5">
-              {current.authorRole || current.role}
-              {current.company && ` — ${current.company}`}
+              {current.clientDesignation}
+              {current.clientCompany && ` — ${current.clientCompany}`}
             </p>
-            {current.caseType && (
-              <span className="inline-block text-[11px] text-[#C9A45C] font-mono mt-1">
-                Matter: {current.caseType}
-              </span>
-            )}
           </div>
 
           {/* Nav buttons */}

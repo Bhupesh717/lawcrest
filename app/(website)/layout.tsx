@@ -10,7 +10,7 @@ export default function WebsiteLayout({
   return (
     <div className="min-h-screen flex flex-col bg-[#0A0A0A] text-[#F5F1E8]">
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 pt-20 md:pt-24">{children}</main>
       <Footer />
     </div>
   );

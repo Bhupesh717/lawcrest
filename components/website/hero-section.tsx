@@ -65,9 +65,9 @@ export function HeroSection() {
 
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <img
-              src="/images/scale-justice-round-composition.png"
+              src="/images/gold-scales-isolated.png"
               alt="Lawcrest Scales of Justice"
-              className="w-full max-w-lg object-contain drop-shadow-[0_0_35px_rgba(201,164,92,0.15)]"
+              className="w-full max-w-lg object-contain mix-blend-screen filter drop-shadow-[0_0_35px_rgba(201,164,92,0.15)] transition-transform duration-700 hover:scale-105"
             />
           </div>
         </div>

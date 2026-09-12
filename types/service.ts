@@ -12,6 +12,7 @@ export interface Service {
   features: string[];
   image: string;
   order: number;
+  caseCount?: number;
   createdAt: string;
   updatedAt: string;
 }

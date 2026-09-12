@@ -68,7 +68,7 @@ export default function PracticeAreasPage() {
                     </h2>
 
                     <p className="text-sm sm:text-base text-[#8F897F] leading-relaxed mb-6 max-w-3xl">
-                      {service.description}
+                      {service.fullDescription}
                     </p>
 
                     {service.features && service.features.length > 0 && (

@@ -77,11 +77,11 @@ export default function CaseStudyDetailPage() {
               variant="outline"
               className="border-[#C9A45C]/40 text-[#C9A45C] uppercase tracking-wider text-xs"
             >
-              {study.practiceArea || "Commercial Litigation"}
+              {study.practiceAreas?.[0] || "Commercial Litigation"}
             </Badge>
-            {study.year && (
+            {study.publishedAt && (
               <span className="text-xs text-[#8F897F] font-mono">
-                Decided {study.year}
+                Decided {new Date(study.publishedAt).getFullYear()}
               </span>
             )}
           </div>
@@ -116,7 +116,7 @@ export default function CaseStudyDetailPage() {
             <h2 className="font-serif text-2xl font-bold text-[#F5F1E8] mb-3">
               Executive Summary
             </h2>
-            <p className="mb-4">{study.summary}</p>
+            <p className="mb-4">{study.shortDescription}</p>
           </div>
 
           {/* The Legal Challenge */}
@@ -130,23 +130,23 @@ export default function CaseStudyDetailPage() {
           )}
 
           {/* Strategy & Courtroom Execution */}
-          {study.strategy && (
+          {study.approach && (
             <div>
               <h2 className="font-serif text-2xl font-bold text-[#F5F1E8] mb-3">
                 Trial Strategy & Courtroom Execution
               </h2>
-              <p className="mb-4">{study.strategy}</p>
+              <p className="mb-4">{study.approach}</p>
             </div>
           )}
 
           {/* Key Precedents & Takeaways */}
-          {study.keyTakeaway && (
+          {study.result && (
             <div className="p-6 rounded-xl border border-[#2E2519] bg-[#14110E]">
               <h3 className="font-serif text-lg font-bold text-[#C9A45C] mb-2 flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5 text-[#C9A45C]" />
                 <span>Strategic Takeaway & Precedent Value</span>
               </h3>
-              <p className="text-sm text-[#E6E0D5]">{study.keyTakeaway}</p>
+              <p className="text-sm text-[#E6E0D5]">{study.result}</p>
             </div>
           )}
         </div>

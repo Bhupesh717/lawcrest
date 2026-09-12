@@ -97,14 +97,19 @@ export function Header() {
             >
               Portal
             </Link>
-            <Link href="/contact">
-              <Button
-                variant="outline"
-                className="border-[#C9A45C]/50 bg-[#C9A45C]/10 text-[#D8B76A] hover:bg-[#C9A45C] hover:text-[#0A0A0A] font-semibold text-xs tracking-wider uppercase h-10 px-5 transition-all duration-300"
-              >
-                Schedule Consultation
-              </Button>
-            </Link>
+            <div className="flex flex-col items-end gap-1.5">
+              {/* <a href="tel:+15551234567" className="flex items-center gap-1.5 text-[11px] font-semibold text-[#B8B0A3] hover:text-[#C9A45C] transition-colors tracking-widest uppercase">
+                <Phone className="h-3 w-3 text-[#C9A45C]" />
+                <span>+1 (555) 123-4567</span>
+              </a> */}
+              <Link href="/contact">
+                <Button
+                  className="relative overflow-hidden border border-[#C9A45C]/40 bg-transparent text-[#D8B76A] font-semibold text-[11px] tracking-widest uppercase h-9 px-6 transition-all duration-500 hover:border-[#C9A45C] hover:bg-gradient-to-r hover:from-[#C9A45C] hover:to-[#D8B76A] hover:text-[#0A0A0A] hover:shadow-[0_0_20px_rgba(201,164,92,0.3)] rounded-sm cursor-pointer"
+                >
+                  Schedule Consultation
+                </Button>
+              </Link>
+            </div>
           </div>
 
           {/* Mobile menu button */}

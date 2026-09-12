@@ -25,11 +25,11 @@ export function CaseStudyCard({
             variant="outline"
             className="border-[#C9A45C]/40 text-[#C9A45C] text-[10px] uppercase tracking-wider"
           >
-            {caseStudy.practiceArea || "Commercial Litigation"}
+            {caseStudy.practiceAreas?.[0] || "Commercial Litigation"}
           </Badge>
-          {caseStudy.year && (
+          {caseStudy.publishedAt && (
             <span className="text-xs text-[#8F897F] font-mono">
-              {caseStudy.year}
+              {new Date(caseStudy.publishedAt).getFullYear()}
             </span>
           )}
         </div>
@@ -50,13 +50,13 @@ export function CaseStudyCard({
         </h3>
 
         <p className="text-sm text-[#8F897F] leading-relaxed line-clamp-3 mb-6">
-          {caseStudy.summary}
+          {caseStudy.shortDescription}
         </p>
 
-        {caseStudy.keyTakeaway && (
+        {caseStudy.result && (
           <div className="flex items-start gap-2 text-xs text-[#B8B0A3] bg-[#1A1612] p-3 rounded-lg border border-[#262018] mb-6">
             <CheckCircle2 className="h-4 w-4 text-[#C9A45C] shrink-0 mt-0.5" />
-            <span className="line-clamp-2">{caseStudy.keyTakeaway}</span>
+            <span className="line-clamp-2">{caseStudy.result}</span>
           </div>
         )}
       </div>

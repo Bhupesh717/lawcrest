@@ -44,7 +44,7 @@ export function PracticeAreaCard({
         </h3>
 
         <p className="text-sm text-[#8F897F] leading-relaxed mb-6 line-clamp-3">
-          {service.description}
+          {service.shortDescription}
         </p>
 
         {service.features && service.features.length > 0 && (

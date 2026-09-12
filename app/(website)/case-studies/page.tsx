@@ -24,7 +24,7 @@ export default function CaseStudiesPage() {
   const filteredStudies = React.useMemo(() => {
     if (!practiceArea) return studies;
     return studies.filter((s) =>
-      s.practiceArea?.toLowerCase().includes(practiceArea.toLowerCase())
+      s.practiceAreas?.some(area => area.toLowerCase().includes(practiceArea.toLowerCase()))
     );
   }, [studies, practiceArea]);
 

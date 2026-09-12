@@ -35,7 +35,7 @@ export default function HomePage() {
   const testimonials = testimonialsData?.data || [];
 
   return (
-    <div className="space-y-20 pb-20">
+    <div className="space-y-20 pb-20 -mt-20 md:-mt-24">
       {/* 1. Cinematic Hero */}
       <HeroSection />
 
