@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+  :root,
+  .dark {
+    color-scheme: dark;
+    --background: 0 0% 4%;
+    --foreground: 40 30% 94%;
+    --card: 24 12% 7%;
+    --card-foreground: 40 30% 94%;
+    --popover: 24 14% 8%;
+    --popover-foreground: 40 30% 94%;
+    --primary: 41 50% 57%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 24 10% 12%;
+    --secondary-foreground: 40 20% 90%;
+    --muted: 24 8% 13%;
+    --muted-foreground: 36 8% 54%;
+    --accent: 41 50% 57%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 15% 18%;
+    --input: 36 15% 18%;
+    --ring: 41 50% 57%;
+    --radius: 0.5rem;
+
+    /* LAWCREST Brand Tokens */
+    --gold: #c9a45c;
+    --gold-bright: #d8b76a;
+    --gold-dim: #997839;
+    --gold-muted: rgba(201, 164, 92, 0.4);
+    --gold-glow: rgba(201, 164, 92, 0.15);
+    --gold-border: rgba(201, 164, 92, 0.22);
+    
+    --bg-dark: #0a0a0a;
+    --bg-surface: #14110e;
+    --bg-surface-elevated: #1a1612;
+    --bg-surface-border: #262018;
+
+    --ink-primary: #f5f1e8;
+    --ink-secondary: #c5beb3;
+    --ink-muted: #8f897f;
+    --ink-faint: #5a544b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f5f1e8;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0a08;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b231a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a45c;
+}
+
+/* Glassmorphism and Luxury Glow utilities */
+.gold-glow {
+  box-shadow: 0 0 25px rgba(201, 164, 92, 0.15);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 45px rgba(201, 164, 92, 0.22);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to bottom right, rgba(201, 164, 92, 0.6), rgba(201, 164, 92, 0.1)) 1;
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(201, 164, 92, 0.08) 0%, transparent 70%);
+}
+
+.bg-luxury-pattern {
+  background-image: radial-gradient(rgba(201, 164, 92, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Luxury card styling */
+.luxury-card {
+  background: #14110e;
+  border: 1px solid #262018;
+  transition: all 0.3s ease;
+}
+
+.luxury-card:hover {
+  border-color: rgba(201, 164, 92, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.7), 0 0 20px rgba(201, 164, 92, 0.08);
+}
+
+/* Text gold gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f5f1e8 0%, #d8b76a 50%, #c9a45c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
