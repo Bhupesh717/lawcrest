@@ -74,12 +74,12 @@ export function AdminSidebar({ className }: { className?: string }) {
       )}
     >
       {/* Brand Header */}
-      <div className="h-16 flex items-center justify-between px-5 border-b border-[#262018]">
+      <div className="h-20 lg:h-24 flex items-center justify-between px-5 border-b border-[#262018]">
         <Link href="/admin/dashboard" className="flex items-center group">
           <img 
             src="/logo.png" 
             alt="LAWCREST Logo" 
-            className="h-8 w-auto transition-transform duration-300 group-hover:scale-105" 
+            className="h-10 lg:h-12 w-auto transition-transform duration-300 group-hover:scale-105" 
           />
         </Link>
       </div>

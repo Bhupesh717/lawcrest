@@ -14,7 +14,7 @@ export function Footer() {
               <img 
                 src="/logo.png" 
                 alt="LAWCREST Logo" 
-                className="h-10 w-auto opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+                className="h-16 sm:h-20 lg:h-24 w-auto opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
               />
             </Link>
             <p className="text-sm text-[#8F897F] leading-relaxed max-w-sm">
