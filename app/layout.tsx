@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "LAWCREST",
   },
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export const viewport: Viewport = {

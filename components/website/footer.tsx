@@ -10,18 +10,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Column 1: Brand & Bio */}
           <div className="lg:col-span-2 space-y-5">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-[#C9A45C] bg-[#17130F] text-[#C9A45C]">
-                <Scale className="h-5 w-5" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-xl font-bold tracking-[0.18em] text-[#F5F1E8]">
-                  LAW<span className="text-[#C9A45C]">CREST</span>
-                </span>
-                <span className="text-[9px] uppercase tracking-[0.25em] text-[#8F897F]">
-                  Professional Corporation
-                </span>
-              </div>
+            <Link href="/" className="flex items-center group">
+              <img 
+                src="/logo.png" 
+                alt="LAWCREST Logo" 
+                className="h-10 w-auto opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              />
             </Link>
             <p className="text-sm text-[#8F897F] leading-relaxed max-w-sm">
               Providing premier legal counsel and trial advocacy for Fortune 500 corporations, institutional leaders, and high-net-worth individuals facing existential legal challenges.

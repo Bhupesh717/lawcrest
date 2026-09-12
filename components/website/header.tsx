@@ -49,18 +49,12 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex h-10 w-10 items-center justify-center rounded-sm border border-[#C9A45C] bg-[#17130F] text-[#C9A45C] transition-all duration-300 group-hover:border-[#D8B76A] group-hover:shadow-[0_0_15px_rgba(201,164,92,0.3)]">
-              <Scale className="h-5 w-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-xl font-bold tracking-[0.18em] text-[#F5F1E8] group-hover:text-white transition-colors">
-                LAW<span className="text-[#C9A45C]">CREST</span>
-              </span>
-              <span className="text-[9px] uppercase tracking-[0.25em] text-[#8F897F]">
-                Professional Corporation
-              </span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <img 
+              src="/logo.png" 
+              alt="LAWCREST Logo" 
+              className="h-10 w-auto transition-transform duration-300 group-hover:scale-105" 
+            />
           </Link>
 
           {/* Desktop Nav Links */}

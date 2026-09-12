@@ -75,18 +75,12 @@ export function AdminSidebar({ className }: { className?: string }) {
     >
       {/* Brand Header */}
       <div className="h-16 flex items-center justify-between px-5 border-b border-[#262018]">
-        <Link href="/admin/dashboard" className="flex items-center gap-2.5">
-          <div className="flex h-8 w-8 items-center justify-center rounded border border-[#C9A45C] bg-[#17130F] text-[#C9A45C]">
-            <Scale className="h-4 w-4" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-serif text-base font-bold tracking-wider text-[#F5F1E8]">
-              LAW<span className="text-[#C9A45C]">CREST</span>
-            </span>
-            <span className="text-[8px] uppercase tracking-[0.2em] text-[#C9A45C]">
-              Case Management
-            </span>
-          </div>
+        <Link href="/admin/dashboard" className="flex items-center group">
+          <img 
+            src="/logo.png" 
+            alt="LAWCREST Logo" 
+            className="h-8 w-auto transition-transform duration-300 group-hover:scale-105" 
+          />
         </Link>
       </div>
 
