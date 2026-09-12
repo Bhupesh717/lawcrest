@@ -22,7 +22,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_35%,rgba(201,164,92,0.12)_0%,transparent_60%)]" />
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:pt-36 lg:pb-10 pt-24 pb-12">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
           <div className="max-w-3xl lg:w-1/2">
             {/* Eyebrow badge */}
@@ -60,22 +60,6 @@ export function HeroSection() {
                   View Verdicts & Results
                 </Button>
               </Link>
-            </div>
-
-            {/* Key proof indicators */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 border-t border-[#262018]/80 text-xs">
-              <div className="flex items-center gap-2 text-[#E6E0D5]">
-                <CheckCircle2 className="h-4 w-4 text-[#C9A45C] shrink-0" />
-                <span>$4.8B+ Verdicts & Settlements</span>
-              </div>
-              <div className="flex items-center gap-2 text-[#E6E0D5]">
-                <Award className="h-4 w-4 text-[#C9A45C] shrink-0" />
-                <span>Chambers Global Band 1</span>
-              </div>
-              <div className="flex items-center gap-2 text-[#E6E0D5] col-span-2 sm:col-span-1">
-                <Shield className="h-4 w-4 text-[#C9A45C] shrink-0" />
-                <span>35+ Years Trial Experience</span>
-              </div>
             </div>
           </div>
 

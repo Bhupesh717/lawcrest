@@ -38,22 +38,27 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
+        "fixed top-0 z-50 w-full transition-all duration-500 ease-in-out",
         scrolled
           ? "bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#262018] shadow-[0_4px_20px_rgba(0,0,0,0.8)]"
-          : "bg-gradient-to-b from-[#0A0A0A] to-transparent border-b border-transparent"
+          : "bg-transparent border-b border-transparent"
       )}
     >
-
       {/* Main navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 md:h-24 lg:h-28">
+        <div className={cn(
+          "flex items-center justify-between transition-all duration-500 ease-in-out",
+          scrolled ? "h-16 md:h-20" : "h-20 md:h-24"
+        )}>
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <img 
-              src="/logo.png" 
-              alt="LAWCREST Logo" 
-              className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto transition-transform duration-300 group-hover:scale-105" 
+            <img
+              src="/logo.png"
+              alt="LAWCREST Logo"
+              className={cn(
+                "w-auto transition-all duration-500 ease-in-out group-hover:scale-105",
+                scrolled ? "h-10 sm:h-14 md:h-16" : "h-12 sm:h-16 md:h-20 lg:h-22"
+              )}
             />
           </Link>
 
